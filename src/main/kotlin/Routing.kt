@@ -13,5 +13,8 @@ fun Application.configureRouting() {
         get("/health") {
             call.respondText("Hello, World! from Health Route")
         }
+        get("/docker") {
+            call.respondText("Hello, World! from Docker Route")
+        }
     }
 }
