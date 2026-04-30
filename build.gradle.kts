@@ -10,7 +10,6 @@ application {
     mainClass = "io.ktor.server.netty.EngineMain"
 }
 
-// ✅ Added for Railway fat JAR
 ktor {
     fatJar {
         archiveFileName.set("app.jar")
@@ -20,6 +19,7 @@ ktor {
 kotlin {
     jvmToolchain(21)
 }
+
 dependencies {
     implementation(ktorLibs.server.core)
     implementation(ktorLibs.server.netty)
